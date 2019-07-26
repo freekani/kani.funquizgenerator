@@ -32,8 +32,8 @@ namespace クイズジェネレーター
                 A2 = answerBox2.Text,
                 A3 = answerBox3.Text,
                 Answer = (int)answer.Value,
-                Genre = presenterBox.Text,
-                Presenter = genreBox.Text,
+                Genre = genreBox.Text,
+                Presenter = presenterBox.Text,
 
             };
             File.AppendAllLines("quiz.txt", new string[] { addQuiz.Question, addQuiz.A0, addQuiz.A1, addQuiz.A2, addQuiz.A3, addQuiz.Answer.ToString(), addQuiz.Genre, addQuiz.Presenter });
